@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="23"
+    android:background="@drawable/log_in">
+    
+       <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:visibility="invisible"/>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10.29" >
+
+	    <EditText
+	        android:id="@+id/inputName"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:ems="10"
+	        android:hint="@string/enter_your_name_here"
+	        android:inputType="textPersonName" >
+
+	        <requestFocus />
+	    </EditText>
+
+	    <EditText
+	        android:id="@+id/inputPw"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/inputSINnumber"
+	        android:layout_below="@+id/inputSINnumber"
+	        android:layout_marginTop="25dp"
+	        android:ems="10"
+	        android:hint="@string/enter_your_password"
+	        android:inputType="textPassword" />
+
+	    <EditText
+	        android:id="@+id/inputSINnumber"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/inputName"
+	        android:layout_below="@+id/inputName"
+	        android:layout_marginTop="26dp"
+	        android:ems="10"
+	        android:hint="@string/enter_your_sin_number_here"
+	        android:inputType="number" />
+
+	</RelativeLayout>
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.76" >
+
+        <CheckBox
+            android:id="@+id/docCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/doctor" />
+
+        <CheckBox
+            android:id="@+id/patCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/patient" />
+
+        <CheckBox
+            android:id="@+id/stakeholderCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stakeholder" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+       
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
+
+</LinearLayout>

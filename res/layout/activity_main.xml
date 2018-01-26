@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="23"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.GP.groupproject.MainActivity"
+    android:background="@drawable/main_activity">
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.84" />
+   
+    <Button
+        android:id="@+id/signupBtn"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.92" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:color="#66FF0000"    
+	  	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.92" />
+    
+     <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="5.8"
+        android:visibility="invisible"/>
+    
+
+</LinearLayout>

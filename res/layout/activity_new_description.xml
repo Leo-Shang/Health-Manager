@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="23"
+    android:background="@drawable/start_treatment" >
+    
+    <View
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.39" >
+
+	    <EditText
+	        android:id="@+id/get_patient_name"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:ems="10"
+	        android:inputType="textPersonName" />
+
+	    <EditText
+	        android:id="@+id/get_patient_num"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:ems="10"
+	        android:inputType="textPersonName" >
+
+	        <requestFocus />
+	    </EditText>
+
+    </RelativeLayout>
+    
+    <View
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="3.5"
+		android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/addDiscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.06"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.05" >
+
+        <Button
+            android:id="@+id/submit"
+            android:color="#66FF0000"    
+	   		android:alpha="0"  
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+
+        <Button
+            android:id="@+id/medicinelist"
+            android:color="#66FF0000"    
+	   		android:alpha="0"  
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+
+</LinearLayout>

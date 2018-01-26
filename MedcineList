@@ -1,0 +1,55 @@
+package com.GP.groupproject;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
+
+public class MedcineList extends Activity {
+	MedcineDB mydb;
+	private TextView myText = null;
+
+	
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.medicine_list);
+		
+		Cursor res = mydb.getAllData();
+		res.moveToFirst();
+		LinearLayout lView = new LinearLayout(this);
+		
+		
+
+	     myText = new TextView(this);
+	     
+	     
+	     while(res.moveToNext()){
+	     myText.setText("Medicine Name:"+res.getString(0)+"\n");
+	     myText.setText("Remain:"+res.getString(1)+"\n");
+	     }
+	     lView.addView(myText);
+
+	     setContentView(lView);
+
+	}
+	
+	
+
+		 
+
+	
+	
+
+	
+}

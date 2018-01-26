@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/doc_login">
+    
+   <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:visibility="invisible"/>
+
+   <Button
+       android:id="@+id/view_sche"
+       android:color="#66FF0000"    
+	   android:alpha="0"         
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1" />
+        
+    <Button
+        android:id="@+id/start_treat"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/view_rate"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:color="#66FF0000"    
+	   	android:alpha="0"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    
+       <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:visibility="invisible"/>
+
+</LinearLayout>

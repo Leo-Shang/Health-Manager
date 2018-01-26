@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.GP.groupproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+    
+    <supports-screens 
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.GP.groupproject.AboutUsActivity"></activity>
+        <activity android:name="com.GP.groupproject.LoginActivity"></activity>
+        <activity android:name="com.GP.groupproject.SignupActivity"></activity>
+        <activity android:name="com.GP.groupproject.DocLoginActivity"></activity>
+        <activity android:name="com.GP.groupproject.PatLoginActivity"></activity>
+        <activity android:name="com.GP.groupproject.StakeLoginActivity"></activity>
+        <activity android:name="com.GP.groupproject.AppointmentActivity"></activity>
+        <activity android:name="com.GP.groupproject.TreatHistActivity"></activity>
+        <activity android:name="com.GP.groupproject.NewDescriptionActivity"></activity>
+        <activity android:name="com.GP.groupproject.ViewScheActivity"></activity>
+        <activity android:name="com.GP.groupproject.EmployeeInfoActivity"></activity>
+        <activity android:name="com.GP.groupproject.ViewMedActivity"></activity>
+        <activity android:name="com.GP.groupproject.RevAndExpActivity"></activity>
+        <activity android:name="com.GP.groupproject.DatabaseOpns"></activity>
+        <activity android:name="com.GP.groupproject.TableData"></activity>
+        <activity android:name="com.GP.groupproject.TableData1"></activity>
+        <activity android:name="com.GP.groupproject.RateActivity"></activity>
+        <activity android:name="com.GP.groupproject.ViewRateActivity"></activity>
+        <activity android:name="com.GP.groupproject.MedcineDB"></activity>
+        <activity android:name="com.GP.groupproject.MedcineList"></activity>
+        <activity android:name="com.GP.groupproject.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
+        </application>
+
+</manifest>
