@@ -1,11 +1,13 @@
 Notes to Naz and TA:
 
-1. Before testing, there are already several info inserted in the database:
+1. The database has already inserted the following information:
 
-- Four doctors: Leo, James, Zack, Mick, with sin number and password all “12345”.
+   - Four doctors: Leo, James, Zack, Mick. Their sin number and password are both “12345”.
 
-2. To test the sign_up activity, it is suggested that delete the original database before testing.
+2. It is suggested to delete the original database before testing the "sign up" activity.
 
-3. To sign up doctor, just simply click the "doctor" checkbox in sign_up page, followed by clicking "Create User" button, and four doctors with their sin number and password all "12345" will automatically be inserted into database.
+3. To sign up as a doctor, click the "doctor" checkbox in the "sign up" page.   
+
+4. Click the "Create User" button, then the sin number and password(which are "12345") of the four doctors will be automatically inserted into the database.
 
 
